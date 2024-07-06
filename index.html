@@ -6,37 +6,41 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: transparent; /* Fondo transparente */
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: transparent; /* Fondo del cuerpo transparente */
     }
-    .transparent-background {
-      background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    h1 {
+      color: #ffffff;
+    }
+    form {
+      background-color:transparent; /* Fondo semi-transparente */
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       width: 300px;
     }
-    .transparent-background h1,
-    .transparent-background label {
-      color: #ffffff; /* Color de texto blanco */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffffff; /* Cambiado a blanco para mejor contraste */
     }
-    .transparent-background input[type="text"],
-    .transparent-background input[type="email"],
-    .transparent-background textarea {
+    input[type="text"],
+    input[type="email"],
+    textarea {
       width: 100%;
       padding: 8px;
       margin-bottom: 10px;
       border: 1px solid #ffffff;
       border-radius: 3px;
       background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
-      color: #000000; /* Color de texto negro */
+      color: #000000;
     }
-    .transparent-background button {
+    button {
       width: 100%;
       padding: 10px;
       background-color: #28a745;
@@ -46,26 +50,24 @@
       font-size: 16px;
       cursor: pointer;
     }
-    .transparent-background button:hover {
+    button:hover {
       background-color: #218838;
     }
   </style>
 </head>
 <body>
-  <div class="transparent-background">
+  <form action="https://formsubmit.co/santiysergiocraftyo@gmail.com" method="POST">
     <h1>Formulario de Contacto</h1>
-    <form action="https://formsubmit.co/santiysergiocraftyo@gmail.com" method="POST">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-      
-      <label for="email">Correo Electrónico:</label>
-      <input type="email" id="email" name="email" placeholder="Tu email" required>
-      
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
-      
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+    
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Tu email" required>
+    
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+    
+    <button type="submit">Enviar</button>
+  </form>
 </body>
 </html>
